@@ -1,0 +1,50 @@
+.often {
+    background-color: black;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    padding-bottom: 4rem;
+
+}
+
+.often_title {
+    font-size: 64px;
+
+    color: #36CB18;
+
+    margin: 3.5rem 0 1.5rem 0;
+}
+
+.often_subtext {
+    margin-bottom: 4rem;
+}
+
+.often_questions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    width: 40%;
+    
+}
+
+.button {
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .often_title {
+        text-align: center;
+    }
+    
+    .often_subtext {
+        text-align: center;
+        width: 80%;
+    }
+}

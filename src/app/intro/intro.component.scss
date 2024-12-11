@@ -1,0 +1,83 @@
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 85vh;
+    padding-top: 4rem;
+
+
+    background: black url(../../assets/motobg.jpg) no-repeat;
+    background-size: 100vw;
+    background-position: 0% 20%;
+    background-image:
+        linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.200),
+            rgba(0, 0, 0, 0.400),
+            rgba(0, 0, 0, 0.700),
+            rgba(0, 0, 0, 0.800),
+            rgb(0, 0, 0)),
+        url('../../assets/motobg.jpg');
+
+}
+
+.intro_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.intro_title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: white;
+    width: 40%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.intro_text {
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.35rem;
+    color: white;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.intro_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    width: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+    .intro {
+        height: auto;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .intro_title {
+        width: 80%;
+        font-size: 1.2rem;
+    }
+
+    .intro_text {
+        width: 65%;
+        font-size: 0.8rem;
+    }
+
+    .intro_buttons {
+        width: 80%;
+        height: 10vh;
+    }
+}
